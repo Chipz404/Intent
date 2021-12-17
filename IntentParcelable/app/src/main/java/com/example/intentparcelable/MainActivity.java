@@ -54,16 +54,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.btn_move_with_data_activity:
             Intent moveWithDataIntent = new Intent(MainActivity.this, MoveWithDataActivity.class);
-            moveWithDataIntent.putExtra(MoveWithDataActivity.EXTRA_NAME, "Muhammad Rifqi Arif");
+            moveWithDataIntent.putExtra(MoveWithDataActivity.EXTRA_NAME, "Dani Kurnia");
             moveWithDataIntent.putExtra(MoveWithDataActivity.EXTRA_AGE, "17");
             startActivity(moveWithDataIntent);
             break;
 
             case R.id.btn_move_activity_object:
                 Person mPerson = new Person();
-                mPerson.setName("Muhammad Rifqi Arif");
+                mPerson.setName("Dani Kurnia");
                 mPerson.setAge(17);
-                mPerson.setEmail("psdarmy14@gmail.com");
+                mPerson.setEmail("danikurnia629@gmail.com");
                 mPerson.setCity("Bandung");
                 Intent moveWithObjectIntent = new Intent(MainActivity.this, MoveWithObjectActivity.class);
                 startActivity(moveWithObjectIntent);
@@ -71,8 +71,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.btn_dial_number:
-                String phoneNumber = "08964324324";
-                Intent dialPhoneIntent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:"+phoneNumber));
+                String phoneNumber = "08815872219";
+                Intent dialPhoneIntent = new Intent(Intent.ACTION_DIAL, Uri.parse("telp:"+phoneNumber));
                 startActivity(dialPhoneIntent);
                 break;
 
